@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/Site confidencial/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Biohard Labs</h1>
+      <nav id="menu-h">
+        <ul>
+          <li>
+            <a href="">Inicio</a>
+          </li>
+          <li>
+            <a href="">Projetos</a>
+          </li>
+          <li>
+            <a href="">Sobre nós</a>
+          </li>
+          <li>
+            <a href="">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Cadastro</legend>
+        <form action="">
+          <label for="nome-cadastro">Nome:</label>
+          <input type="text" name="" id="nome-cadastro" required />
+          <br />
+          <label for="sexo-cadastro">Sexo:</label>
+          <label for="sexo-masculino">Masculino</label>
+          <input
+            type="radio"
+            name="sexo-cadastro"
+            id="sexo-masculino"
+            value="Masculino"
+            required
+          />
+          <label for="sexo-feminino">Feminino</label>
+          <input
+            type="radio"
+            name="sexo-cadastro"
+            id="sexo-feminino"
+            value="Feminino"
+            required
+          />
+          <br />
+          <label for="email-cadastro">Email:</label>
+          <input type="email" name="" id="email-cadastro" required />
+          <br />
+          <label for="idade-cadastro">Data de nascimento: </label>
+          <input type="date" name="idade-cadastro" id="idade-cadastro" />
+          <br />
+          <label for="nivel-cadastro">Nível:</label>
+          <input
+            type="number"
+            name=""
+            id="nivel-cadastro"
+            min="0"
+            max="100"
+            required
+          />
+          <br />
+          <label for="classe-cadastro">Classe:</label>
+          <select name="classe" id="classe-cadastro">
+            <option value="1">Guerreiro</option>
+            <option value="2">Mago</option>
+            <option value="3">Arqueiro</option>
+            <option value="4">Ladino</option>
+          </select>
+          <br />
+          <label for="skills">Habilidades: </label>
+          <input list="skills-list" name="skills" id="skills" />
+          <datalist id="skills-list">
+            <option value="Pesca"></option>
+            <option value="Caça"></option>
+            <option value="Alquimia"></option>
+            <option value="Refino"></option>
+          </datalist>
+          <br />
+          <label for="classe-backstory">Biografia:</label>
+          <textarea
+            name="classe-backstory"
+            id="classe-backstory"
+            cols="30"
+            rows="10"
+            placeholder="Descreva a história do seu personagem..."
+          ></textarea>
+          <br />
+          <input
+            onsubmit="alert('Cadastro realizado!')"
+            type="submit"
+            id="submit-cadastro"
+            value="Cadastrar"
+          />
+          <button
+            onclick="window.location.href='/Site confidencial/login.html'"
+          >
+            Voltar
+          </button>
+        </form>
+      </fieldset>
+    </main>
+    <footer>
+      <p>Site criado para fins didáticos por Sanohart©</p>
+    </footer>
+    <script src="/Site confidencial/js/scrypt.js"></script>
+  </body>
+</html>

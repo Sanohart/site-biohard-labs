@@ -1,0 +1,94 @@
+/**Customização geral**/
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+  /**box-sizing: border-box;**/
+}
+
+/**Cabeçalho**/
+
+header {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 100px;
+  text-shadow: white 4px 5px;
+}
+
+#menu-h {
+  background-color: black;
+}
+
+#menu-h ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-h ul li {
+  display: inline;
+}
+
+#menu-h ul li a {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.5s;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#menu-h ul li a:hover {
+  background-color: aquamarine;
+  color: black;
+  font-weight: bold;
+  text-shadow: white 1px 1px;
+}
+
+/**Principal**/
+
+fieldset {
+  width: fit-content;
+  max-width: 500px;
+  line-height: 2;
+  padding: 15px;
+}
+
+legend {
+  cursor: default;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  margin: 8px;
+}
+
+#submit-cadastro {
+  cursor: pointer;
+}
+
+/**Rodapé**/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  color: black;
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-top: 3px solid black;
+}
